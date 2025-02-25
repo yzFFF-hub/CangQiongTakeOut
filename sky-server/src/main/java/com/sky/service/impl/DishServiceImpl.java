@@ -150,6 +150,18 @@ public class DishServiceImpl implements DishService {
             //向口味表插入多条数据
             dishFlavorMapper.insertBatch(flavors);
         }
+    }
 
+    /**
+     * 启售禁售菜品
+     * @param dishDTO
+     */
+    public void enableDisable(Integer status, Long id) {
+        Dish dish = Dish.builder()
+                .status(status)
+                .id(id)
+                .build();
+
+        dishMapper.update(dish);
     }
 }

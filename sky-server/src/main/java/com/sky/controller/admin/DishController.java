@@ -80,4 +80,12 @@ public class DishController {
         dishService.modifyDishWithFlavor(dishDTO);
         return Result.success();
     }
+
+    @PostMapping("/status/{status}")
+    @ApiOperation("启售禁售")
+    public Result enableDisable(@PathVariable Integer status, Long id) {
+        log.info("启售禁售菜品：{}", id);
+        dishService.enableDisable(status, id);
+        return Result.success();
+    }
 }

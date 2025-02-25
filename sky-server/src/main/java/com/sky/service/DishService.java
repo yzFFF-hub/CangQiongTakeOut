@@ -40,4 +40,10 @@ public interface DishService {
      * @param dishDTO
      */
     void modifyDishWithFlavor(DishDTO dishDTO);
+
+    /**
+     * 启售禁售菜品
+     * @param status, id
+     */
+    void enableDisable(Integer status, Long id);
 }
