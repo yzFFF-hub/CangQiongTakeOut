@@ -11,3 +11,8 @@ sky:
     access-key-id: LTAI5t8xWBECmhf8FpnjYrrH
     access-key-secret: ppNMV9AVOtyEPj1BOEOydE9NMT355P
     bucket-name: cang-qiong-take-out1
+  redis:
+    host: localhost
+    port: 6379
+    password: 113769028a
+    database: 0

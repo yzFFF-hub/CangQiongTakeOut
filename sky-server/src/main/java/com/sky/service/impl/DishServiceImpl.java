@@ -154,7 +154,7 @@ public class DishServiceImpl implements DishService {
 
     /**
      * 启售禁售菜品
-     * @param dishDTO
+     * @param status, id
      */
     public void enableDisable(Integer status, Long id) {
         Dish dish = Dish.builder()
